@@ -44,25 +44,25 @@ def test_prostye():
     print(p)
                 # print("n =", n, "i =", i, "rem =", n % i)
 
-def test_string():
-    str1 = input("enter something: ")
-    str2 = input("enter something else: ")
-    length = len(str1) + len(str2)
-    print("total length of input is", length)
-    print("found", str1.count("в"), "letters 'в' in", str1)
-
-def test_numbers():
-    lst = []
-    lst.append([1, 4, 7, 436457])
-    lst[0] = 10
-    lst.extend([786, "e46", 363])
-    lst[1] = 3
-    print(lst)
-    lst_final = input("Enter smth \n")
-    lst.append(lst_final)
-    for i in lst:
-        print(i)
-    assert lst[len(lst) - 1].isnumeric(), "expected number"
+# def test_string():
+#     str1 = input("enter something: ")
+#     str2 = input("enter something else: ")
+#     length = len(str1) + len(str2)
+#     print("total length of input is", length)
+#     print("found", str1.count("в"), "letters 'в' in", str1)
+#
+# def test_numbers():
+#     lst = []
+#     lst.append([1, 4, 7, 436457])
+#     lst[0] = 10
+#     lst.extend([786, "e46", 363])
+#     lst[1] = 3
+#     print(lst)
+#     lst_final = input("Enter smth \n")
+#     lst.append(lst_final)
+#     for i in lst:
+#         print(i)
+#     assert lst[len(lst) - 1].isnumeric(), "expected number"
 
 
 def test_apozh():
@@ -104,7 +104,7 @@ def test_set_intersection():
     assert len_intersect == 3
     help(test_set_intersection)
 
-def test_dict(print_hello):
+def test_dict():
     list_num = [1, 2, 3, 4, 5]
     list_name = ['masha', 'lesha', 'olaf', 'charley', 'edgar']
 
